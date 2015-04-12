@@ -1,16 +1,16 @@
 # docker-bigwhoop
 
 ## HOW TO RUN
-Create a new directory 'config' and modify the variables:
+###Create a new directory 'config' and modify the variables:
 ```
-  $ mkdir config
+ $ mkdir config
  $ cd config
  $ wget https://raw.githubusercontent.com/aerospaceresearch/DGSN_bigwhoop/master/node/set_your_groundstation_config.xml
  $ wget https://raw.githubusercontent.com/aerospaceresearch/DGSN_bigwhoop/master/node/workunit.xml
  $ vi set_your_groundstation_config.xml workunit.xml
  $ cd ..
 ```
-After that start the image and mount the configuration directory as external volume:
+### After that start the image and mount the configuration directory as external volume:
 ```
   $ docker run -ti \
    --name bigwhoop \
@@ -18,13 +18,13 @@ After that start the image and mount the configuration directory as external vol
    -v $PWD/config:/gnuradio/DGSN_bigwhoop/node/config \
    marcelmaatkamp/bigwhoop
 ```
-## HOW TO BUILD LOCALLY
+### HOW TO BUILD LOCALLY
 ```
  $ git clone https://github.com/marcelmaatkamp/docker-bigwhoop.git
  $ cd docker-bigwhoop
  $ docker build -t marcelmaatkamp/bigwhoop .
 ```
-## HOW TO EXTEND WITH YOUR OWN CODE
+### HOW TO EXTEND WITH YOUR OWN CODE
 Define your own 'Dockerfile':
 ```
 FROM marcelmaatkamp:bigwhoop
