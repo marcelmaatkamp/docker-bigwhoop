@@ -10,7 +10,6 @@ Create a new directory 'config' and modify the variables:
  $ vi set_your_groundstation_config.xml workunit.xml
  $ cd ..
 ```
-
 After that start the image and mount the configuration directory as external volume:
 ```
  $ docker run -ti \
@@ -19,8 +18,13 @@ After that start the image and mount the configuration directory as external vol
    -v $PWD/config:/gnuradio/DGSN_bigwhoop/node/config \
    marcelmaatkamp/bigwhoop
 ```
-
-## HOW TO EXTEND
+## HOW TO BUILD LOCALLY
+```
+ $ git clone https://github.com/marcelmaatkamp/docker-bigwhoop.git
+ $ cd docker-bigwhoop
+ $ docker build -t marcelmaatkamp/bigwhoop .
+```
+## HOW TO EXTEND WITH YOUR OWN CODE
 Define your own 'Dockerfile':
 ```
 FROM marcelmaatkamp:bigwhoop
