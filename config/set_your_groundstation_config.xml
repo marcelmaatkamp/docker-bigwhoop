@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<groundstation>	
+	<gs_location_long>5.42E</gs_location_long>
+	<gs_location_lat>52.12N</gs_location_lat>
+	<gs_location_alt_meter>2.5</gs_location_alt_meter>
+	
+        <gs_name>LEUSDEN</gs_name>
+	<gs_info>Groundstation Leusden (owner Marcel Maatkamp, m.maatkamp@gmail.com)</gs_info>
+	<gs_info_url>http://www.marcelmaatkamp.com</gs_info_url>
+	
+	<!-- For each sensor, add one block (Optional) -->
+	<sensor id="1000">
+		<sen_name>LEUSDEN_01</sen_name>
+		<sen_usbport>1</sen_usbport>
+		<sen_hw_ppm>100</sen_hw_ppm>
+		<sen_hw_modified>1</sen_hw_modified>
+		<sen_hw_convertiondown>0</sen_hw_convertiondown>
+		<sen_hw_convertionup>0</sen_hw_convertionup>
+		<sen_antenna>standard</sen_antenna>
+	</sensor>
+</groundstation>
