@@ -13,7 +13,11 @@ Create a new directory 'config' and modify the variables:
 
 After that start the image and mount the configuration directory as external volume:
 ```
- $ docker run -ti --privileged -v $PWD/config:/gnuradio/DGSN_bigwhoop/node/config marcelmaatkamp/bigwhoop
+ $ docker run -ti \
+   --name bigwhoop \
+   --privileged 
+   -v $PWD/config:/gnuradio/DGSN_bigwhoop/node/config \
+   marcelmaatkamp/bigwhoop
 ```
 
 ## HOW TO EXTEND
