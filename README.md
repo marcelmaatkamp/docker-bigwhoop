@@ -15,7 +15,7 @@ After that start the image and mount the configuration directory as external vol
 ```
  $ docker run -ti \
    --name bigwhoop \
-   --privileged 
+   --privileged \
    -v $PWD/config:/gnuradio/DGSN_bigwhoop/node/config \
    marcelmaatkamp/bigwhoop
 ```
