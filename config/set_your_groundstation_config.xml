@@ -5,7 +5,7 @@
 	<gs_location_alt_meter>2.5</gs_location_alt_meter>
 	
         <gs_name>LEUSDEN</gs_name>
-	<gs_info>Groundstation Leusden (owner Marcel Maatkamp, m.maatkamp@gmail.com)</gs_info>
+	<gs_info>Groundstation Leusden (m.maatkamp@gmail.com)</gs_info>
 	<gs_info_url>http://www.marcelmaatkamp.com</gs_info_url>
 	
 	<!-- For each sensor, add one block (Optional) -->
